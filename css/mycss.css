@@ -1,0 +1,22 @@
+div, body {
+   margin: 0;
+   padding: 0;
+ }
+ .pic-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -1.5px;
+ }
+ .pic-list-item {
+   flex: 0 0 33%;
+    padding-top: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-clip: padding-box; /*������ͼƬ�ı߾�������padding���߽��ڣ���������border��*/
+    box-sizing: border-box; /*����border-box����marin��padding��border����height��width*/
+    border: 1.5px solid transparent;
+ }
+  .pic-list-item:first-child:nth-last-child(4) ~ .pic-list-item:nth-child(2) {
+   margin-right: 33%;
+ }
